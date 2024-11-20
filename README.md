@@ -186,12 +186,15 @@ def exportar_excel(self):
 
 
 🧑‍💻 Contribuciones
+
 Si deseas contribuir a este proyecto, siéntete libre de realizar un fork y hacer un pull request con tus cambios. Asegúrate de que el código siga las pautas de estilo y sea completamente funcional.
 
 📜 Licencia
+
 Este proyecto está libre toda licencia y es de libre utilización por todos lo usuarios.
 
 🔧 Tecnologías Utilizadas
+
 Python 3.x
 Tkinter (para la interfaz gráfica)
 MySQL (para la base de datos)
@@ -199,9 +202,11 @@ Matplotlib (para gráficos)
 Pandas (para exportar a Excel)
 
 🌐 Contactos
+
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
 
 📧 Correo Electrónico: rodrigo.diazdones.23@campusfp.es
 
 ⭐ Agradecimientos
+
 Gracias por revisar este proyecto. ¡Espero que sea útil para ti!  
