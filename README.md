@@ -68,16 +68,29 @@ CREATE TABLE ENCUESTA (
     DolorCabeza char(12)
 );
 
+En mi equipo para solventar problemas de conexión con el código, he introducio esta línea de sql en mi base de datos, en casos habituales no es necesario y te la puedes ahorar.
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'campusfp';
+FLUSH PRIVILEGES;
+
 Edita el archivo de configuración de la base de datos en tu proyecto para establecer la conexión:
 
 import mysql.connector
 
-conexion = mysql.connector.connect(
-    host="localhost",
-    user="root",  # Cambia el usuario si es necesario
-    password="password",  # Cambia la contraseña si es necesario
-    database="clinica"
-)
+Para solventar el problema de conexión que yo he tenido al conectar con la base de datos he incluido la línea auth_plugin en mi clase conexión, en casos habituales no es necasria y puedes borrala de tu código.
+
+def conectar():
+        try:
+            return mysql.connector.connect(
+                host="localhost",  
+                user="root",      
+                password="campusfp", 
+                database="ENCUESTAS", 
+                auth_plugin='mysql_native_password'  # Plugin de autenticación para la versión del ordenador de clase.
+            )
+        except Exception as e:
+            print("Error de conexión:", e)
+            return None  # Si no se puede conectar, retorna None.
 
 📝 Uso del Proyecto
 
