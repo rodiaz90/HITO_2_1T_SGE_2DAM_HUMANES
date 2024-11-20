@@ -1,9 +1,12 @@
 
-🎯 README - Proyecto de Gestión de Encuestas de Consumo de Alcohol
-🚀 Descripción del Proyecto
+#🎯 README - Proyecto de Gestión de Encuestas de Consumo de Alcohol
+
+##🚀 Descripción del Proyecto
+
 Este proyecto es una aplicación desarrollada con Python utilizando Tkinter para la interfaz gráfica de usuario (GUI) y MySQL para gestionar una base de datos relacionada con el consumo de alcohol y sus efectos sobre la salud. El sistema permite realizar operaciones CRUD sobre las encuestas de los pacientes, visualizar los resultados mediante gráficos, y exportar datos a Excel para su análisis.
 
 Objetivos Principales:
+
 Interfaz de Usuario (Tkinter): Permitir la visualización y manipulación de los datos relacionados con el consumo de alcohol y los indicadores de salud.
 Conexión con MySQL: Establecer una conexión con una base de datos de MySQL para realizar operaciones CRUD.
 Consultas y Ordenación: Permitir la consulta y ordenación de los resultados de las encuestas de los pacientes según diferentes criterios.
