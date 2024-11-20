@@ -11,7 +11,7 @@ class Conexion:
                 user="root",       # Usuario para la conexión (root)
                 password="campusfp",  # Contraseña del usuario
                 database="ENCUESTAS",  # Nombre de la base de datos a la que se conecta
-                auth_plugin='mysql_native_password'  # Plugin de autenticación para la versión del ordenador de clase.
+                auth_plugin='mysql_native_password'  # Plugin de autenticación para mi equipo, en casos normales BORRAR ESTA LÍNEA.
             )
         except Exception as e:
             # Si ocurre algún error al intentar conectar, se captura la excepción y se imprime el mensaje de error.
